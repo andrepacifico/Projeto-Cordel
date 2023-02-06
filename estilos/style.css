@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'cordelina';
+    src: url('../fontes/cordelina.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'cordelencantado';
+    src: url('../fontes/EldesCordel-Demo.otf') format('opentype');
+}
+
+* {
+
+margin: 0px;
+padding: 0px;
+
+}
+
+body {
+
+    background-color: white;
+}
+
+header {
+
+background-color: black;
+color: white;
+padding-top: 50px;
+text-align: center;
+line-height: 3em;
+
+}
+
+header > h1 {
+
+    font-family: 'cordelencantado';
+    font-variant: small-caps;
+    font-size: 60px;
+    color: rgb(161, 161, 66);;
+}
+
+header > p {
+
+padding-bottom: 50px;
+font-family: 'cordelina';
+
+}
+
+header > p > a {
+
+text-decoration: none;
+color: white;
+
+}
+
+
+
+a:hover {
+
+text-decoration: underline;
+color: rgb(161, 161, 66);
+
+}
+
+section {
+
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section > p {
+
+font-family: 'cordelina';
+font-size: 25px;
+text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.541);
+
+}
+
+
+section.noimage {
+
+    background-color: white;
+    color: black;
+
+}
+
+
+
+section.withimage {
+
+background-color: rgba(0, 0, 0, 0.753);
+color: white;
+background-attachment: fixed;
+background-repeat: no-repeat;
+box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.911);
+background-size: cover;
+
+}
+
+section.withimage > p {
+
+    background-color: rgba(0, 0, 0, 0.534);
+    width: 300px;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+section#cordelepc01 {
+
+    background-image: url(../imagens/pcecordel.png);
+    
+    background-position: center center;
+
+}
+
+section#celularecordel02 {
+
+    background-image: url(../imagens/celularecordel.jpg);
+    background-position: center right;
+    color: rgb(255, 255, 255);
+}
+
+
+footer {
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+
+
+}
+
+footer > p > a {
+
+    color: white
+}
+
+footer > a:hover {
+
+    text-decoration: underline;
+    color: rgb(161, 161, 66);
+    
+}
